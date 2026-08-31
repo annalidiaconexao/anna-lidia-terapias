@@ -1,0 +1,5 @@
+SITE FINAL — ANNA LÍDIA | TERAPIAS DE CONEXÃO
+
+Páginas: index.html, cristais.html, baralho.html, cacau.html, historia.html, contato.html.
+Contato: WhatsApp (19) 98188-5639 · aidilanna@hotmail.com
+Abra index.html para visualizar o site localmente.

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cacau Medicinal | Anna Lídia</title><meta name="description" content="Anna Lídia · Terapias de Conexão">
+<style>
+:root{
+  --paper:#f6f2e9; --paper2:#eee9dd; --ink:#3f4437; --muted:#706c61;
+  --olive:#596548; --olive2:#454e39; --earth:#92785a; --line:#d9d1c1;
+  --white:#fbfaf6; --shadow:rgba(52,53,42,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(91%,1160px);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(246,242,233,.96);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:215px}
+.brand img{width:52px;height:52px;object-fit:contain}
+.brand-name{font-size:1.18rem;letter-spacing:.3px;color:var(--olive2)}
+.brand-name small{display:block;font-family:Arial,sans-serif;font-size:.59rem;letter-spacing:2.1px;color:var(--earth);margin-top:-3px}
+.menu{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:20px;font:12px Arial,sans-serif;letter-spacing:.35px}
+.menu a{text-decoration:none;color:#55584d;padding:6px 0;border-bottom:1px solid transparent}
+.menu a:hover,.menu a.active{color:var(--olive2);border-bottom-color:var(--earth)}
+.hero{position:relative;overflow:hidden;background:var(--paper2)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.25;background:radial-gradient(circle at 85% 18%,rgba(146,120,90,.12),transparent 30%),radial-gradient(circle at 12% 80%,rgba(89,101,72,.10),transparent 34%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:58px;align-items:center;min-height:650px;padding:65px 0}
+.hero-copy{padding:15px 0}
+.eyebrow{font:11px Arial,sans-serif;text-transform:uppercase;letter-spacing:3px;color:var(--earth);margin-bottom:14px}
+h1{font-size:clamp(3rem,6.3vw,6rem);font-weight:normal;line-height:.98;color:var(--olive2);letter-spacing:-1.5px;margin-bottom:22px}
+.hero h2{font-size:clamp(1.3rem,2.2vw,1.85rem);font-weight:normal;color:#706652;line-height:1.35;margin-bottom:20px;max-width:620px}
+.hero p{font-size:1.03rem;color:#625f55;max-width:620px;margin-bottom:27px}
+.hero-photo{height:610px;overflow:hidden;box-shadow:0 22px 55px var(--shadow)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;padding:12px 23px;border:1px solid var(--olive);border-radius:999px;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:.6px;transition:.2s}
+.btn:hover{background:var(--olive);color:#fff}
+.btn.fill{background:var(--olive);color:#fff}.btn.fill:hover{background:var(--olive2)}
+section{padding:88px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 45px}
+.section-head .eyebrow{margin-bottom:9px}
+.section-head h2{font-size:2.45rem;font-weight:normal;color:var(--olive2);line-height:1.15;margin-bottom:13px}
+.section-head p{color:var(--muted)}
+.section-head h2:after{content:"";display:block;width:58px;height:1px;background:var(--earth);margin:20px auto 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}
+.photo{overflow:hidden;box-shadow:0 18px 45px var(--shadow)}
+.photo.tall{height:520px}.photo.medium{height:440px}
+.photo img{width:100%;height:100%;object-fit:cover}
+.text h3{font-size:1.85rem;font-weight:normal;color:var(--olive);margin-bottom:16px}
+.text p{margin-bottom:16px;color:#5f5d54}
+.quote{border-left:2px solid var(--earth);padding:16px 0 16px 23px;color:#625a4c;font-style:italic;font-size:1.15rem;margin-top:22px}
+.soft{background:var(--paper2)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);box-shadow:0 10px 28px rgba(55,55,40,.045);transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(55,55,40,.09)}
+.card-img{height:260px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:25px 25px 28px}
+.card-body h3{font-size:1.55rem;font-weight:normal;color:var(--olive);margin-bottom:9px}
+.card-body p{font-size:.94rem;color:var(--muted);margin-bottom:18px}
+.card-body a{font:11px Arial,sans-serif;letter-spacing:1.3px;text-transform:uppercase;text-decoration:none;color:var(--earth)}
+.dark{background:var(--olive2);color:#f7f3ea}
+.dark h2,.dark h3{color:#fbf8f1}
+.dark p{color:#f0ece3}
+.cta{text-align:center;padding:90px 0}
+.cta h2{font-size:2.5rem;font-weight:normal;margin-bottom:12px}
+.cta p{max-width:680px;margin:0 auto 24px;color:#f0ece3}
+.page-hero{background:var(--paper2);padding:72px 0 58px;text-align:center;position:relative;overflow:hidden}
+.page-hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(146,120,90,.22);border-radius:50%;right:-110px;top:-100px}
+.page-hero h1{font-size:clamp(2.7rem,6vw,4.8rem);margin-bottom:17px}
+.page-hero p{max-width:750px;margin:auto;color:var(--muted);font-size:1.05rem}
+.content{max-width:900px;margin:auto}
+.content h2{font-size:2rem;font-weight:normal;color:var(--olive2);margin-bottom:14px}
+.content p{color:#5f5d54;margin-bottom:16px}
+.prose-block{padding:38px 0;border-bottom:1px solid var(--line)}
+.prose-block:last-child{border-bottom:0}
+.feature{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
+.feature-image{height:480px;overflow:hidden}
+.feature-image img{width:100%;height:100%;object-fit:cover}
+.feature-copy h2{font-size:2.2rem;font-weight:normal;color:var(--olive2);margin-bottom:15px}
+.list{margin:17px 0 18px;padding-left:20px;color:#5f5d54}
+.list li{margin-bottom:8px}
+.notice{padding:20px 23px;background:#ebe6da;border-left:2px solid var(--earth);font-size:.9rem;color:#625e54;margin-top:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.step{border-top:2px solid var(--earth);padding:19px 18px;background:rgba(255,255,255,.42)}
+.step span{display:block;font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--earth);margin-bottom:8px}
+.step h3{font-size:1.2rem;font-weight:normal;color:var(--olive);margin-bottom:7px}
+.step p{font-size:.91rem;margin:0}
+.timeline{position:relative;margin-top:34px;padding-left:28px;border-left:1px solid var(--line)}
+.formation{position:relative;padding:0 0 30px 25px}
+.formation:before{content:"";position:absolute;left:-34px;top:7px;width:9px;height:9px;border:1px solid var(--earth);background:var(--paper);border-radius:50%}
+.formation span{font:11px Arial,sans-serif;letter-spacing:1.5px;color:var(--earth)}
+.formation h3{font-size:1.2rem;font-weight:normal;color:var(--olive);margin:5px 0}
+.formation p{font-size:.92rem;margin:0}
+.gallery-single{margin:34px auto 0;max-width:940px}
+.gallery-single img{width:100%;max-height:650px;object-fit:cover}
+.caption{text-align:center;color:#777063;font-size:.82rem;font-style:italic;margin-top:10px}
+.contact-float{position:fixed;right:24px;bottom:24px;width:54px;height:54px;border-radius:50%;background:var(--olive2);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 28px var(--shadow);z-index:80;border:1px solid rgba(255,255,255,.25)}
+.contact-float svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.contact-float:hover{transform:translateY(-2px);background:var(--earth)}
+footer{background:#38402f;color:#e9e4d9;text-align:center;padding:31px 0;font:11px Arial,sans-serif;letter-spacing:.4px}
+footer a{text-decoration:none}
+@media(max-width:850px){
+  nav{flex-direction:column;padding:13px 0}.menu{justify-content:center;gap:13px}
+  .hero-grid,.split,.feature{grid-template-columns:1fr;gap:32px}.hero-grid{padding:42px 0 55px}
+  .hero-photo{height:500px}.photo.tall,.photo.medium{height:420px}
+  .services,.steps{grid-template-columns:1fr}
+  section{padding:65px 0}.page-hero{padding:55px 0 45px}
+}
+
+/* Correção de contraste dos blocos escuros */
+.dark .text p,
+.dark .text h3,
+.dark .text h2,
+.dark .text .eyebrow,
+.dark .text .quote,
+.dark.cta p,
+.dark.cta h2,
+.dark.cta .eyebrow {
+  color:#f5f1e8 !important;
+}
+.dark .text p { opacity:1 !important; }
+
+</style></head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="index.html"><img src="img/logo.png" alt="Logo Anna Lídia"><span class="brand-name">Anna Lídia<small>TERAPIAS DE CONEXÃO</small></span></a>
+<div class="menu"><a class="" href="index.html">Início</a><a class="" href="cristais.html">Cristais</a><a class="" href="baralho.html">Baralho Cigano</a><a class="active" href="cacau.html">Cacau Medicinal</a><a class="" href="historia.html">Minha história</a></div>
+</nav></div></header>
+
+<section class="page-hero"><div class="container">
+ <div class="eyebrow">Cacau Medicinal</div>
+ <h1>Uma pausa para voltar a estar presente.</h1>
+ <p>Um momento de meditação profunda e autoconexão, construído de forma individual para o que precisa ser olhado naquele dia.</p>
+</div></section>
+
+<section><div class="container feature">
+ <div class="feature-image"><img src="img/cacau.jpeg" alt="Anna Lídia preparando o cacau em um atendimento"></div>
+ <div class="feature-copy">
+  <div class="eyebrow">Antes de começar</div>
+  <h2>O próprio preparo já faz parte da experiência.</h2>
+  <p>A pessoa chega e prepara comigo o próprio cacau: aquece a água e participa da mistura exclusiva para aquele encontro. Esse gesto simples exige atenção e presença — justamente algo que muitas vezes não conseguimos encontrar na correria do cotidiano.</p>
+  <p>Enquanto preparamos, ela pode contar o motivo de estar ali. Às vezes, um desabafo simples já é necessário para que o corpo e a mente comecem a desacelerar.</p>
+ </div>
+</div></section>
+
+<section class="soft"><div class="container">
+ <div class="section-head"><div class="eyebrow">A experiência</div><h2>Do primeiro gole à reflexão.</h2><p>O encontro é conduzido com presença, silêncio e elementos escolhidos de acordo com o momento da pessoa.</p></div>
+ <div class="steps">
+  <div class="step"><span>01 · Preparar</span><h3>Presença</h3><p>O preparo do cacau é feito junto, com atenção aos gestos, ao cheiro, à textura e ao próprio momento.</p></div>
+  <div class="step"><span>02 · Tomar</span><h3>Perceber</h3><p>O cacau é tomado com música que conduz o processo meditativo. O doce do aroma e o amargo intenso do sabor podem colocar a pessoa diante de seus próprios contrastes.</p></div>
+  <div class="step"><span>03 · Integrar</span><h3>Levar para a vida</h3><p>Depois, voltamos a conversar. As sensações e percepções podem ganhar consciência e se transformar em reflexão para o cotidiano.</p></div>
+ </div>
+</div></section>
+
+<section><div class="container content">
+ <div class="prose-block"><h2>Uma experiência individual, não uma receita igual para todos.</h2>
+ <p>A quantidade de cacau é escolhida considerando diversos fatores pessoais da pessoa que está em atendimento. Não trabalho com uma quantidade única para todos.</p>
+ <p>Também podem ser acrescentadas especiarias escolhidas para acompanhar o assunto e o aspecto que está sendo trabalhado, dentro da proposta do encontro.</p></div>
+ <div class="prose-block"><h2>Meditação guiada para o momento necessário.</h2>
+ <p>Após a tomada do cacau, existe uma meditação guiada escolhida especificamente para a pessoa e para o momento que ela está vivendo naquele dia.</p>
+ <p>O silêncio pode abrir espaço para percepções que não encontram lugar na rotina. Às vezes isso vem como tranquilidade; outras vezes, como emoção ou choro. Não existe uma resposta obrigatória para a experiência.</p></div>
+ <div class="prose-block"><h2>Quando um simples chocolate vira um momento de reflexão.</h2>
+ <p>O cacau se torna um recurso para desacelerar e observar. O objetivo não é produzir uma experiência específica, mas criar condições para que a pessoa possa estar consigo mesma por um tempo que, muitas vezes, não consegue se oferecer.</p></div>
+ <div class="notice"><strong>Responsabilidade e segurança:</strong> no momento do agendamento, é importante informar qualquer problema ou condição médica, gestação, alergia, sensibilidade ao cacau ou a estimulantes e todos os medicamentos em uso. Essas informações são necessárias para que o atendimento seja conduzido com responsabilidade e coerência com a proposta de cuidado. Este trabalho não substitui acompanhamento médico ou tratamento de saúde.</div>
+ <div class="prose-block"><h2>Atendimento</h2><p><strong>Presencial em Sorocaba.</strong></p><p>Para valores e disponibilidade, entre em contato.</p></div>
+ <a class="btn fill" href="contato.html">Entrar em contato</a>
+</div></section>
+
+<footer><div class="container"><p>© 2026 Anna Lídia · Terapias de Conexão</p></div></footer>
+<a class="contact-float" href="index.html#contato" aria-label="Entrar em contato" title="Entrar em contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.8 8.8 0 0 1-3.7-.8L4 19l1.1-3.5A7.3 7.3 0 0 1 4.5 12 7.5 7.5 0 0 1 12 4.5a7.5 7.5 0 0 1 8 7z"/><path d="M8 11.5h.01M12 11.5h.01M16 11.5h.01"/></svg></a>
+</body></html>
